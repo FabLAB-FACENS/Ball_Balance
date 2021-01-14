@@ -1,6 +1,6 @@
 import cv2
 
-captura = cv2.VideoCapture()  # Liga a webcam
+captura = cv2.VideoCapture(0)  # Liga a webcam
 while 1:
     ret, frame = captura.read()
     cv2.imshow("Webcam", frame)
